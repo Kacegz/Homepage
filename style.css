@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+   --blue: rgb(27, 83, 105);
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,p{
+    margin: 0;
+}
+#container{
+    background: linear-gradient(160deg, var(--blue) 10%, rgb(104, 143, 175) 14%, rgba(255,255,255,1) 99%);
+    font-size: 1.5rem;
+}
+#hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+#name{
+    position: absolute;
+    left: 10vw;
+    top:350px;
+    font-size: 4rem;
+    color: white;
+}
+#heroimg{
+    height: 400px;
+    width: 300px;
+    object-fit:cover;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.link{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+.smalllink{
+    width: 30px;
+    height: 30px;
+}
+#work{
+    text-align: center;
+    padding: 30px;
+    padding-top: 0;
+}
+#showcase{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+.project{
+    background-color: white;
+    font-size: 1.2rem;
+}
+.projectheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+}
+.projectheader>span{
+    display: flex;
+    gap: 10px;
+}
+.description{
+    margin: 20px;
+}
+.name{
+    justify-self: start;
+}
+.screenshot{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blue);
+}
+#info{
+    padding: 30px;
+    color: white;
+}
+#info>p{
+    margin: 20px;
+}
+.headertext{
+    margin: 20px;
+    text-align: center;
+}
+
+#footerimg{
+    height: 400px;
+    width: 100%;
+    object-fit:cover;
+}
+@media (min-width:600px) {
+    #about{
+        background-color: white;
+        padding: 30px;
+        margin: 60px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    #heroimg{
+        position:relative;
+        float: left;
+        top:-100px;
+        box-shadow: 5px 5px 6px black;
+        margin-bottom: -80px;
+    }
+    #about>h2{
+        top: 20px;
+        left:430px;
+    }
+    #about>h1{
+        text-align: center;
+    }
+    #about>.links{
+        display: none;
+    }
+    #work{
+        margin:20px;
+    }
+    .headertext{
+        text-align:left;
+        font-size: 2.2rem;
+    }
+    #showcase{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .description{
+        text-align: left;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+    }
+    #info{
+        display: flex;
+        flex-direction: column;
+    }
+    #footerimg{
+        height: auto;
+        width: 40%;
+        margin: 40px;
+    }
+}
+@media (min-width:1200px) {
+    #about{
+        background-color: white;
+        padding: 30px;
+        margin: 40px;
+        margin-left:400px ;
+        text-align: left;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    #about>.links{
+        display: block;
+        align-self: flex-end;
+    }
+    #about .link{
+        height: 30px;
+        width: 30px;
+    }
+    #about>h1{
+        text-align: center;
+    }
+    #heroimg{
+        position:absolute;
+        height: 430px;
+        width: 400px;
+        top:30px;
+        left:40px;
+        box-shadow: 5px 5px 6px black;
+    }
+    #about>h2{
+        position:absolute;
+        top:400px;
+        left: 150px;
+    }
+    #showcase{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 60px;
+    }
+    #info>.links{
+        justify-content: start;
+        gap:0;
+    }
+    #footerimg{
+        height: 500px;
+        width: 50%;
+        margin: 40px;
+    }
+}
